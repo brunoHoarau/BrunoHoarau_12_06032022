@@ -1,6 +1,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-# OPENCLASSROOMS PROJECT 12 - Develop an analytics Dashboard with React
+# OPENCLASSROOMS PROJECT 12 - Develop an analytics dashboard with React
 
 ![SportSee](https://user.oc-static.com/upload/2020/08/18/15977560509272_logo%20%285%29.png)
 
@@ -9,7 +9,7 @@ Creation of a dashboard with React. This page integrates graphs on the sports ac
 ## Prerequisites
 * [Node.js](https://nodejs.org/en/) (version 12.18) for use npm
 * [Git](https://git-scm.com/) for clone this repository
-* [Yarn](https://yarnpkg.com/)
+* [npm](https://www.npmjs.com/)
 
 ## Dependencies
 - [React](https://reactjs.org): v17.0.2  
@@ -35,16 +35,16 @@ Warning, currently only two users have been mocked. They have userId 12 and 18 r
 
 ## 2. Install and launch Frontend
 
-### 2.2 Installation
+### 2.1 Installation
 * Clone this repository on your computer `git clone https://github.com/brunoHoarau/BrunoHoarau_12_06032022.git`
 * Go to the project folder `cd BrunoHoarau_12_06032022`
 * Install all dependencies of you need for run this project with command `npm install`
 
-### 2.3 Run the project
+### 2.2 Run the project
 * Run project with command `npm start`
 * Open your browther ([localhost:3001](http://localhost:3001/ port by default)
 
-### 2.4 List of queries:
+### 2.3 List of queries:
 - http://localhost:3001/12
 - http://localhost:3001/18
 

@@ -14,7 +14,7 @@ main {
 .main-top {
   margin: 0 0 25px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: flex-start;
   background-color: #FBFBFB;
   height: 30vh;
@@ -30,13 +30,22 @@ main {
 }
 
 .main-bottom{
-  display: flex;
-  justify-content: space-between;
   height: fit-content;
   width: 95%;
 }
 
-.welcome {
-    margin: 0 0 5vh 11.5%;
-}
 
+
+@media (min-width: 1024px) {
+  .main-top{
+    flex-direction: column;
+  }
+  .main-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .welcome {
+      margin: 0 0 5vh 11.5%;
+  }
+}

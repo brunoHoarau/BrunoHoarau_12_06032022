@@ -1,7 +1,9 @@
 /*  main top  */
-.main-top {
-  /* width: 30vh; */
-  height: 30vh;
+
+@media (min-width: 1024px) {
+  .main-top {
+    height: 30vh;
+  }
 }
 
 /* RadarChart subject/kind activity   */
@@ -123,4 +125,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .main-top {
+    height: 30vh;
+  }
 }
