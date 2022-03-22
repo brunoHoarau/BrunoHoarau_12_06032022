@@ -1,0 +1,45 @@
+#header-v {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  background-color: black;
+  width: 90px;
+  height: 100%;
+}
+
+.global-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+}
+
+.vertical-square {
+  display: flex;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.vertical-square > img {
+  height: 50%;
+  margin: auto;
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 50px;
+  }
+
+#copyright > p {
+  font-size: 0.75em;
+  color: white;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
