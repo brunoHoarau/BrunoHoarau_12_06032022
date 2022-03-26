@@ -1,7 +1,6 @@
 class FormatData {
 
-  formatBasiqueData = ( data ) => {
-    console.log(data)
+  formatBasiqueData = (data) => {
     return {
       id: data.id,
       firstName: data.userInfos.firstName,

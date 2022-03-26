@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 /**
  *  @param { Array.Object } data- Average activity data
- *  @return { Component } React Component 
+ *  @return { Component } React Component
 */
 
 class ChartAverageActivity extends Component {

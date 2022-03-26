@@ -7,9 +7,11 @@ import CarbIcon from "../../public/carbs-icon.svg"
 import FatIcon from "../../public/fat-icon.svg"
 import FetchData from "../../services/FetchData";
 import '../Aside/Aside.css'
+import MockedData from "../../services/MockedData";
 
 /**
 *@param { number } id - user id
+*@param { boolean } mock
 *@return { Component } React Component 
 */
 
@@ -18,18 +20,30 @@ class Aside extends Component {
     super(props)
     this.state = {
       id: this.props.id,
+      mock: this.props.mock
     }
     this.fd = new FetchData()
+    this.md = new MockedData()
   }
 
   async componentDidMount() {
-    const asideData = await this.fd.getBasiqueData(this.state.id)
+    if(!this.props.mock){
+      const asideData = await this.fd.getBasiqueData(this.state.id)
+        this.setState({
+          calories: asideData.keyData.calorieCount,
+          proteins: asideData.keyData.proteinCount,
+          carbohydrates: asideData.keyData.carbohydrateCount,
+          lipid: asideData.keyData.lipidCount,
+        })
+      } else {
+      const asideMockData = this.md.mockFormatBasiqueData(this.state.id)
       this.setState({
-        calories: asideData.keyData.calorieCount,
-        proteins: asideData.keyData.proteinCount,
-        carbohydrates: asideData.keyData.carbohydrateCount,
-        lipid: asideData.keyData.lipidCount,
+        calories: asideMockData.keyData.calorieCount,
+        proteins: asideMockData.keyData.proteinCount,
+        carbohydrates: asideMockData.keyData.carbohydrateCount,
+        lipid: asideMockData.keyData.lipidCount
       })
+      }
   }
 
   render() {
@@ -45,7 +59,8 @@ class Aside extends Component {
 }
 
 Aside.protoTypes = {
-  id: PropTypes.number
+  id: PropTypes.number,
+  mock: PropTypes.bool
 }
 
 export default Aside;
